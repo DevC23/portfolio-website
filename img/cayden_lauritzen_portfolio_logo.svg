@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Background" transform="matrix(1.01942,0,0,1.0534,-3.98058,-3.95146)">
+        <rect x="-1" y="-1" width="206" height="75" style="fill:rgb(38,38,38);"/>
+    </g>
+    <g transform="matrix(0.795202,0,0,0.795202,-3.4639,0.588549)">
+        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(255,148,26);">Cayden Lauritzen</text>
+    </g>
+    <g transform="matrix(2.21916,0,0,4.16603,-59.9221,-128.207)">
+        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+    </g>
+    <g transform="matrix(-2.21916,0,0,4.16603,259.383,-128.207)">
+        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+    </g>
+    <g transform="matrix(0.480897,0,0,0.480897,16.3446,28.875)">
+        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(137,194,230);">Full Stack Web Developer</text>
+    </g>
+</svg>

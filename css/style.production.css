@@ -1,0 +1,425 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+/*
+Colors Used
+Background Color - #262626 (Dark Gray)
+Secondary Background Color #C2BCBC (Light Gray)
+Primary Color - #FF941A (Orange)
+Secondary Color - #89C2E6 (Light Blue)
+Tertiary Color - #7AF57C (Light Green)
+Hover/Focus Color - #C2B8F4 (Lavender Blue)
+Visited Color #F0A3FF (Light Purple)
+Active Color - #FF8F8F (Light Red)
+Sky Color - #D0EED4 (Nyanza) / #F8DAB5 (Light Orange)
+Bridge Color - #79CF90 (Emerald) / #F8B080 (Sandy Brown) 
+*/
+
+* {
+    /*Wildcard style changes*/
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    /*Base body style changes*/
+    font-family: 'Poppins', sans-serif;
+    color: #89C2E6; 
+    background-color: #262626;
+}
+.navigation-list {
+    /*Base navigation list style changes"*/
+    color: #7AF57C;
+    list-style-type: none;
+}
+.navigation-list li {
+    /*Base navigation list style changes"*/
+    display: inline-block;
+    margin-left: 15px;
+}
+.navigation-list__item:visited {
+    /*Navigation hyperlink style when on current webpage"*/
+    color: #89C2E6; 
+    text-decoration: none;
+}
+.navigation-list__item--visited:visited {
+    /*Navigation hyperlink style after visiting previous webpage*/
+    color: #FF941A;
+    text-decoration: none;
+}
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+.page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+.page-footer {
+    /*Base footer style changes*/
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+h1 {
+    /*Base heading 1 style changes*/
+    color: #FF941A;
+}
+h2 {
+    /*Base heading 2 style changes*/
+    color: #7AF57C;
+}
+p {
+    /*Base paragraph style changes*/
+    color: #89C2E6;  
+}
+span {
+    /*Base span style changes*/
+    color: #FF941A;
+}
+th {
+    /*Table header style changes*/
+    color: #7AF57C;
+}
+a {
+    /*Base link style changes*/
+    color: #FF941A;
+    text-decoration: none; 
+}
+a:hover {
+    /*Will not show a underline when hovering over link by default*/
+    color: #C2B8F4;
+    text-decoration: underline;
+}
+a:visited {
+    /*Will change colors if link has been visited*/
+    color: #F0A3FF;
+}
+a:active {
+    /*Will change colors if link is selected*/
+    color: #FF8F8F;
+}
+a:focus {
+    /*Will create an outline around link when in "focus"*/
+    outline: 2px solid #C2B8F4;
+}
+button {
+    /*Base button style changes*/
+    font-size: 16px;
+    color: white;
+    background-color: #FF941A;
+    /*Will add spacing around button*/
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid black;
+}
+button:hover {
+    /*Will change colors when hovering over button*/
+    background-color: #C2B8F4;
+}
+button:active {
+    /*Will change colors if button is selected*/
+    background-color: #FF8F8F;
+}
+button:focus {
+    /*Will lower the opacity of the button when in "focus"*/
+    outline: none;
+    opacity: 0.8;
+}
+input {
+    /*Form input field style changes*/
+    background-color: #C2BCBC;
+}
+textarea {
+    /*Form input field style changes*/
+    background-color: #C2BCBC;
+}
+.button-download__resume {
+    /*Resume download button style changes*/
+    font-size: 16px;
+    color: white;
+    background-color: #FF941A;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid black;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+.button-download__resume:hover, .button-download__resume:visited, .button-download__resume:active, .button-download__resume:focus {
+    /*Resume download button pseudo-class style changes*/
+    cursor: pointer;
+    opacity: 0.8;
+    color: white;
+    text-decoration: none;
+}
+.standard-label {
+    margin-left: 10px;
+}
+.submit-message_button {
+    /*"Send Message" button changes*/
+    font-size: 16px;
+    color: #262626;
+    background-color: #7AF57C;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid black;
+    margin: 2px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.portfolio-logo {
+    /*Portfolio Logo scaling*/
+    height: 70px;
+    width: 200px;
+}
+.profile {
+    /*Homepage profile (Heading, Project Hyperlink, Profile Portrait) style changes*/
+    max-width: 700px;
+    margin: 0 auto;
+}
+.profile__portrait {
+    /*Homepage portrait style changes*/
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+.about__heading {
+    /*About page heading style changes*/
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about__paragraph {
+    /*About page paragraph style changes*/
+    font-size: 16px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.about__table {
+    /*About page table (Skills, Years of Experience, Levels of Expertise) style changes*/
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.resume-section {
+    margin-top: 28px;
+    text-align: center;
+}
+.contact-heading {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4px;
+}
+.email-info {
+    /*Contact info style changes (Developer Receiving Emails)*/
+    margin-left: 4px;
+}
+.tel-info {
+    /*Contact info style changes (Developer Receiving Phone Numbers)*/
+    margin-left: 4px;
+}
+#contact-email {
+    /*Full contact form style changes (User Providing Emails)*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 400px;
+    margin-left: 10px;
+}
+#contact-tel {
+    /*Full contact form style changes (User Providing Phone Numbers)*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 400px;
+    margin-left: 10px;
+}
+#contact-message {
+    /*Full contact form style changes (User Providing Messages)*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 250px;
+    width: 800px;
+    margin-left: 10px;
+    resize: none;
+}
+#email-contact-link {
+    /*"Contact Me!" in page footer (Contact Page)*/
+    margin-bottom: -6px;
+}
+.work-heading {
+    margin-left: 20px;
+}
+.grid__item {
+    /*Grid fallback method (Alternative Layout*/
+    display: inline-block;
+    width: 33%;
+}
+.grid {
+    /*Base grid layout (Work Page)*/
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+}
+.grid__item {
+    /*Base grid item layout (Work Page)*/
+    font-size: 14px;
+    outline: 2px solid #C2BCBC;
+    padding: 10px;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+}
+.grid__item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+}
+.bridge-section {
+    /*Changes to San Francisco Bridge SVG Section (About Page)*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+}
+.animated-svg {
+    /*Changes to San Francisco Bridge SVG (About Page)*/
+    height: 400px;
+    width: 400px;
+}
+.sky {
+    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
+    -webkit-animation: 6s sky-color-change infinite alternate linear;
+            animation: 6s sky-color-change infinite alternate linear;
+}
+.bridge {
+    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
+    -webkit-animation: 6s bridge-color-change infinite alternate linear;
+            animation: 6s bridge-color-change infinite alternate linear;
+}
+@-webkit-keyframes sky-color-change {
+    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
+    from {
+        fill: #D0EED4;
+    }
+    to {
+        fill: #F8DAB5;
+    }
+}
+@keyframes sky-color-change {
+    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
+    from {
+        fill: #D0EED4;
+    }
+    to {
+        fill: #F8DAB5;
+    }
+}
+@-webkit-keyframes bridge-color-change {
+    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
+    from {
+        fill: #79CF90;
+    }
+    to {
+        fill: #F8B080;
+    }
+}
+@keyframes bridge-color-change {
+    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
+    from {
+        fill: #79CF90;
+    }
+    to {
+        fill: #F8B080;
+    }
+}
+@media all and (max-width: 500px) {
+    /*Smaller device media query (Work Page)*/
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        /*Bigger device media query (Work Page)*/
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width: 750px) {
+    /*Shared media query between smaller and bigger devices (Work Page)*/
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+}
