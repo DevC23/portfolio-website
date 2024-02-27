@@ -31,6 +31,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--secondary-color); 
     background-color: var(--background-color);
+    scroll-behavior: smooth;
 }
 .navigation-list {
     /*Base navigation list style changes"*/
@@ -47,10 +48,24 @@ body {
     color: var(--secondary-color); 
     text-decoration: none;
 }
+.navigation-list__item:hover {
+    /*Navigation hyperlink style when on current webpage while hovering"*/
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--tertiary-color); 
+    text-decoration: none;
+    outline: none;
+}
 .navigation-list__item--visited:visited {
     /*Navigation hyperlink style after visiting previous webpage*/
     color: var(--primary-color);
     text-decoration: none;
+}
+.navigation-list__item--visited:hover {
+    /*Navigation hyperlink style after visiting previous webpage while hovering*/
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--tertiary-color); 
+    text-decoration: none;
+    outline: none;
 }
 .page-header {
     display: flex;
@@ -81,7 +96,7 @@ h2 {
 }
 p {
     /*Base paragraph style changes*/
-    color: var(--secondary-color);  
+    color: var(--secondary-color); 
 }
 span {
     /*Base span style changes*/
@@ -254,20 +269,54 @@ input, textarea {
     /*Full contact form style changes (User Providing Messages)*/
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 200px;
     width: 800px;
     margin-left: 10px;
     resize: none;
 }
-#email-contact-link {
-    /*"Contact Me!" in page footer (Contact Page)*/
-    margin-bottom: -6px;
+.contact__footer {
+    margin-top: 80px;
+}
+.form-table-container {
+    /*Contact form and Availability Schedule container for general positioning (Contact page)*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.availability__table-container {
+    /*Availability Schedule container for positioning (Contact page)*/
+    display: flex;
+    flex-direction: row;
+}
+.availability__table {
+    /*Availability Schedule time and day style and positioning changes (Contact page)*/
+    margin-left: -390px;
+    margin-bottom: -160px;
+}
+.table__header {
+    /*Availability Schedule header cell style changes (Contact page)*/
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+.day-cell {
+    /*Availability Schedule day cell style changes (Contact page)*/
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+.time-cell {
+    /*Availability Schedule time cell style changes (Contact page)*/
+    color: var(--secondary-color);
+    white-space: nowrap;
+}
+.footer--adjustment--contact {
+    /*Footer adjustment changes (Contact page)*/
+    margin-top: -40px;
 }
 .work-heading {
     margin-left: 20px;
 }
 .grid__item {
-    /*Grid fallback method (Alternative Layout*/
+    /*Grid fallback method (Alternative Layout)*/
     display: inline-block;
     width: 33%;
 }
@@ -302,6 +351,7 @@ input, textarea {
     /*Changes to San Francisco Bridge SVG (About Page)*/
     height: 400px;
     width: 400px;
+    border: solid 1px var(--secondary-background-color);
 }
 .sky {
     /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
