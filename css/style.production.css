@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 /*
@@ -37,7 +37,7 @@ body {
     list-style-type: none;
 }
 .navigation-list li {
-    /*Base navigation list style changes"*/
+    /*Base navigation list item style changes"*/
     display: inline-block;
     margin-left: 15px;
 }
@@ -66,6 +66,7 @@ body {
     outline: none;
 }
 .page-header {
+    /*Base header style changes (Site navigation and logo)*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -73,11 +74,13 @@ body {
     padding: 20px;
 }
 .page-header__item {
+    /*Base header item style changes (Site navigation and logo)*/
     -webkit-box-flex: 0;
         -ms-flex: 0 1 200px;
             flex: 0 1 200px;
 }
 .page-header__item:last-child {
+    /*Last header item style changes (Site navigation and logo)*/
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -142,7 +145,6 @@ button {
     font-size: 16px;
     color: white;
     background-color: #FF941A;
-    /*Will add spacing around button*/
     padding: 10px;
     border: none;
     border-radius: 3px;
@@ -179,6 +181,7 @@ textarea {
     border-radius: 3px;
     border-bottom: 2px solid black;
     -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 .button-download__resume:hover, .button-download__resume:visited, .button-download__resume:active, .button-download__resume:focus {
@@ -189,6 +192,7 @@ textarea {
     text-decoration: none;
 }
 .standard-label {
+    /*Standard label style changes (Contact page)*/
     margin-left: 10px;
 }
 .submit-message_button {
@@ -214,25 +218,28 @@ textarea {
     max-width: 700px;
     margin: 0 auto;
 }
+.profile__heading {
+    /*Homepage heading style changes*/
+    margin-bottom: -8px;
+}
 .profile__portrait {
     /*Homepage portrait style changes*/
     float: left;
     width: 250px;
-    margin-right: 40px;
+    margin-right: 20px;
     border-radius: 50%;
 }
 .about__heading {
     /*About page heading style changes*/
-    width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 .about__paragraph {
     /*About page paragraph style changes*/
     font-size: 16px;
-    width: 1200px;
     margin: 0 auto;
     margin-top: 10px;
+    max-width: 900px;
     text-align: center;
 }
 .about__table {
@@ -242,32 +249,28 @@ textarea {
     margin-top: 10px;
     text-align: center;
 }
-.resume-section {
+.resume-button__container {
+    /*Resume button container style changes (About page)*/
     margin-top: 28px;
     text-align: center;
 }
-.contact-heading {
-    width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 4px;
+.contact__heading {
+    /*Contact heading style changes (Contact page)*/
+    margin-top: -16px;
+    margin-left: 10px;
+    margin-bottom: 2px;
 }
 .email-info {
     /*Contact info style changes (Developer Receiving Emails)*/
+    color: #89C2E6;
     margin-left: 4px;
+    margin-bottom: 4px;
 }
 .tel-info {
     /*Contact info style changes (Developer Receiving Phone Numbers)*/
+    color: #89C2E6;
     margin-left: 4px;
+    margin-bottom: 20px;
 }
 #contact-email {
     /*Full contact form style changes (User Providing Emails)*/
@@ -308,9 +311,10 @@ textarea {
     resize: none;
 }
 .contact__footer {
+    /*"Contact Me!" footer style changes (Contact page)*/
     margin-top: 80px;
 }
-.form-table-container {
+.contact__container {
     /*Contact form and Availability Schedule container for general positioning (Contact page)*/
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,8 +338,8 @@ textarea {
 }
 .availability__table {
     /*Availability Schedule time and day style and positioning changes (Contact page)*/
-    margin-left: -390px;
-    margin-bottom: -160px;
+    margin-right: 100px;
+    margin-top: 140px;
 }
 .table__header {
     /*Availability Schedule header cell style changes (Contact page)*/
@@ -345,6 +349,7 @@ textarea {
 .day-cell {
     /*Availability Schedule day cell style changes (Contact page)*/
     color: #FF941A;
+    padding-left: 10px;
     padding-right: 10px;
 }
 .time-cell {
@@ -404,72 +409,106 @@ textarea {
 }
 .animated-svg {
     /*Changes to San Francisco Bridge SVG (About Page)*/
-    height: 400px;
-    width: 400px;
     border: solid 1px #C2BCBC;
 }
-.sky {
-    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
-    -webkit-animation: 6s sky-color-change infinite alternate linear;
-            animation: 6s sky-color-change infinite alternate linear;
-}
-.bridge {
-    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
-    -webkit-animation: 6s bridge-color-change infinite alternate linear;
-            animation: 6s bridge-color-change infinite alternate linear;
-}
-@-webkit-keyframes sky-color-change {
-    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
-    from {
-        fill: #D0EED4;
-    }
-    to {
-        fill: #F8DAB5;
-    }
-}
-@keyframes sky-color-change {
-    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
-    from {
-        fill: #D0EED4;
-    }
-    to {
-        fill: #F8DAB5;
-    }
-}
-@-webkit-keyframes bridge-color-change {
-    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
-    from {
-        fill: #79CF90;
-    }
-    to {
-        fill: #F8B080;
-    }
-}
-@keyframes bridge-color-change {
-    /*Included within "san_francisco_bridge.svg" file to save space in HTML (About Page)*/
-    from {
-        fill: #79CF90;
-    }
-    to {
-        fill: #F8B080;
-    }
-}
 @media all and (max-width: 500px) {
-    /*Smaller device media query (Work Page)*/
+    /*Smaller device media query*/
+    .profile__portrait {
+        width: 180px;
+        margin-right: 5px;
+    }
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
+    .about__heading {
+        font-size: 22px;
+        max-width: 200px;
+    }
+    .about__paragraph {
+        max-width: 300px;
+    }
+    .animated-svg {
+        height: 300px;
+        width: 300px;
+    }
+    .contact__heading {
+        margin-left: 50px;
+        margin-bottom: 4px;
+    }
+    .standard-label {
+        margin-left: 20px;
+    }
+    .email-info, .tel-info {
+        font-size: 14px;
+    }
+    #contact-form {
+        margin-top: 200px;
+    }
+    #contact-email, #contact-tel {
+        width: 300px;
+        margin-left: 20px;
+    }
+    #contact-message {
+        width: 300px;
+        margin-left: 20px;
+    }
+    .submit-message_button {
+        margin-left: 20px;
+    }
+    .availability__table-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-left: -300px;
+        margin-bottom: 430px;
+    }
+    .table__header {
+        padding-left: -40px;
+        padding-bottom: 4px;
+    }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
+    /*Bigger device media query*/
     .grid {
-        /*Bigger device media query (Work Page)*/
         -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
     }
+    .about__heading {
+        font-size: 32px;
+    }
+    .about__paragraph {
+        max-width: 550px;
+    }
+    .animated-svg {
+        height: 450px;
+        width: 450px;
+    }
+    .contact__heading {
+        margin-bottom: 4px;
+    }
+    .email-info, .tel-info {
+        font-size: 15px;
+    }
+    #contact-form {
+        margin-top: 220px;
+    }
+    #contact-email, #contact-tel {
+        width: 320px;
+    }
+    #contact-message {
+        width: 320px;
+    }
+    .availability__table {
+        margin-bottom: -160px;
+    }
 }
 @media all and (max-width: 750px) {
-    /*Shared media query between smaller and bigger devices (Work Page)*/
+    /*Shared media query between smaller and bigger devices*/
     .grid {
         grid-gap: 10px;
     }
