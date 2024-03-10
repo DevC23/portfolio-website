@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Background" transform="matrix(1.01942,0,0,1.0534,-3.98058,-3.95146)">
+        <rect x="-1" y="-1" width="206" height="75" style="fill:rgb(38,38,38);"/>
+    </g>
+    <g transform="matrix(0.707706,0,0,0.707706,27.3293,38.1503)">
+        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(255,148,26);">Ca<tspan x="30.984px 45.07px 60.023px " y="0px 0px 0px ">yde</tspan>n Lauritz<tspan x="179.66px 193.957px " y="0px 0px ">en</tspan></text>
+    </g>
+    <g transform="matrix(2.21916,0,0,4.16603,-2.22394,68.65)">
+        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+    </g>
+    <g transform="matrix(-2.21916,0,0,4.16603,202.685,68.65)">
+        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+    </g>
+    <g transform="matrix(0.451845,0,0,0.451845,30.9051,48.7605)">
+        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(137,194,230);">Full Stack W<tspan x="148.57px 162.867px " y="0px 0px ">eb</tspan> Dev<tspan x="233.039px 247.336px " y="0px 0px ">el</tspan>oper</text>
+    </g>
+</svg>
