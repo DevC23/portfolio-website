@@ -1,138 +1,180 @@
 /*
 Colors Used
 Background Color - #262626 (Dark Gray)
-Secondary Background Color #C2BCBC (Light Gray)
-Primary Color - #FF941A (Orange)
-Secondary Color - #89C2E6 (Light Blue)
-Tertiary Color - #7AF57C (Light Green)
-Hover/Focus Color - #C2B8F4 (Lavender Blue)
-Visited Color #F0A3FF (Light Purple)
-Active Color - #FF8F8F (Light Red)
-Sky Color - #D0EED4 (Nyanza) / #F8DAB5 (Light Orange)
-Bridge Color - #79CF90 (Emerald) / #F8B080 (Sandy Brown) 
+Secondary Background Color #c2bcbc (Light Gray)
+Primary Color - #ff941a (Orange)
+Secondary Color - #89c2e6 (Light Blue)
+Tertiary Color - #7af57c (Light Green)
+Hover/Focus Color - #c2b8f4 (Lavender Blue)
+Visited Color #f0a3ff (Light Purple)
+Active Color - #ff8f8f (Light Red)
 */
 
 * {
-    /*Wildcard style changes*/
+    /* Wildcard style changes */
     box-sizing: border-box;
 }
+
 :root {
     --background-color: #262626;
-    --secondary-background-color: #C2BCBC;
-    --primary-color: #FF941A;
-    --secondary-color: #89C2E6;
-    --tertiary-color: #7AF57C;
-    --hover-focus-color: #C2B8F4;
-    --visited-color: #F0A3FF;
-    --active-color: #FF8F8F;
+    --secondary-background-color: #c2bcbc;
+    --primary-color: #ff941a;
+    --secondary-color: #89c2e6;
+    --tertiary-color: #7af57c;
+    --hover-focus-color: #c2b8f4;
+    --visited-color: #f0a3ff;
+    --active-color: #ff8f8f;
 }
+
 body {
-    /*Base body style changes*/
+    /* Base body style changes */
     font-family: 'Poppins', sans-serif;
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
     background-color: var(--background-color);
     scroll-behavior: smooth;
+
+    /* Scrollbar thumb [Scrollbar] and track [Scrollbar Scrollable Area] style changes for Mozilla browsers (Firefox) */
+    scrollbar-color: var(--tertiary-color) var(--background-color);
+    scrollbar-width: thin;
 }
+
+::-webkit-scrollbar {
+    /* Base Scrollbar style changes for WebKit browsers (Chrome, Safari, Edge) */
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Scrollbar thumb [Scrollbar] style changes for WebKit browsers (Chrome, Safari, Edge) */
+    background-color: var(--tertiary-color);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    /* Scrollbar track [Scrollbar Scrollable Area] style changes for WebKit browsers (Chrome, Safari, Edge) */
+    background-color: var(--background-color);
+}
+
 .navigation-list {
-    /*Base navigation list style changes"*/
+    /* Base navigation list style changes" */
     color: var(--tertiary-color);
     list-style-type: none;
 }
+
 .navigation-list li {
-    /*Base navigation list item style changes"*/
+    /* Base navigation list item style changes" */
     display: inline-block;
     margin-left: 15px;
 }
+
 .navigation-list__item:visited {
-    /*Navigation hyperlink style when on current webpage"*/
-    color: var(--secondary-color); 
-    text-decoration: none;
-}
-.navigation-list__item:hover {
-    /*Navigation hyperlink style when on current webpage while hovering"*/
+    /* Navigation hyperlink style when on current webpage" */
     color: var(--secondary-color);
-    border-bottom: 1px solid var(--tertiary-color); 
+    text-decoration: none;
+}
+
+.navigation-list__item:hover {
+    /* Navigation hyperlink style when on current webpage while hovering" */
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--tertiary-color);
     text-decoration: none;
     outline: none;
 }
+
 .navigation-list__item--visited:visited {
-    /*Navigation hyperlink style after visiting previous webpage*/
+    /* Navigation hyperlink style after visiting previous webpage */
     color: var(--primary-color);
     text-decoration: none;
 }
+
 .navigation-list__item--visited:hover {
-    /*Navigation hyperlink style after visiting previous webpage while hovering*/
+    /* Navigation hyperlink style after visiting previous webpage while hovering */
     color: var(--primary-color);
-    border-bottom: 1px solid var(--tertiary-color); 
+    border-bottom: 1px solid var(--tertiary-color);
     text-decoration: none;
     outline: none;
 }
+
 .page-header {
-    /*Base header style changes (Site navigation and logo)*/
+    /* Base header style changes (Site navigation and logo) */
     display: flex;
     width: 100%;
     padding: 20px;
 }
+
 .page-header__item {
-    /*Base header item style changes (Site navigation and logo)*/
+    /* Base header item style changes (Site navigation and logo) */
     flex: 0 1 200px;
 }
+
 .page-header__item:last-child {
-    /*Last header item style changes (Site navigation and logo)*/
+    /* Last header item style changes (Site navigation and logo) */
     flex-grow: 1;
     text-align: right;
 }
+
 .page-footer {
-    /*Base footer style changes*/
+    /* Base footer style changes */
     clear: both;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
 h1 {
-    /*Base heading 1 style changes*/
+    /* Base heading 1 style changes */
     color: var(--primary-color);
 }
+
 h2 {
-    /*Base heading 2 style changes*/
+    /* Base heading 2 style changes */
     color: var(--tertiary-color);
 }
+
 p {
-    /*Base paragraph style changes*/
-    color: var(--secondary-color); 
+    /* Base paragraph style changes */
+    color: var(--secondary-color);
 }
+
 span {
-    /*Base span style changes*/
+    /* Base span style changes */
     color: var(--primary-color);
 }
+
 th {
-    /*Table header style changes*/
+    /* Table header style changes */
     color: var(--tertiary-color);
 }
+
 a {
-    /*Base link style changes*/
+    /* Base link style changes */
     color: var(--primary-color);
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 a:hover {
-    /*Will not show a underline when hovering over link by default*/
+    /* Will not show a underline when hovering over link by default */
     color: var(--hover-focus-color);
     text-decoration: underline;
 }
+
 a:visited {
-    /*Will change colors if link has been visited*/
+    /* Will change colors if link has been visited */
     color: var(--visited-color);
 }
+
 a:active {
-    /*Will change colors if link is selected*/
+    /* Will change colors if link is selected */
     color: var(--active-color);
 }
+
 a:focus {
-    /*Will create an outline around link when in "focus"*/
+    /* Will create an outline around link when in "focus" */
     outline: 2px solid var(--hover-focus-color);
 }
+
 button {
-    /*Base button style changes*/
+    /* Base button style changes */
     font-size: 16px;
     color: white;
     background-color: var(--primary-color);
@@ -141,25 +183,31 @@ button {
     border-radius: 3px;
     border-bottom: 2px solid black;
 }
+
 button:hover {
-    /*Will change colors when hovering over button*/
+    /* Will change colors when hovering over button */
     background-color: var(--hover-focus-color);
 }
+
 button:active {
-    /*Will change colors if button is selected*/
+    /* Will change colors if button is selected */
     background-color: var(--active-color);
 }
+
 button:focus {
-    /*Will lower the opacity of the button when in "focus"*/
+    /* Will lower the opacity of the button when in "focus" */
     outline: none;
     opacity: 0.8;
 }
-input, textarea {
-    /*Form input field style changes*/
+
+input,
+textarea {
+    /* Form input field style changes */
     background-color: var(--secondary-background-color);
 }
+
 .button-download__resume {
-    /*Resume download button style changes*/
+    /* Resume download button style changes (About page) */
     font-size: 16px;
     color: white;
     background-color: var(--primary-color);
@@ -169,19 +217,32 @@ input, textarea {
     border-bottom: 2px solid black;
     transition: opacity 0.2s;
 }
-.button-download__resume:hover, .button-download__resume:visited, .button-download__resume:active, .button-download__resume:focus {
-    /*Resume download button pseudo-class style changes*/
+
+.button-download__resume:hover,
+.button-download__resume:visited,
+.button-download__resume:active,
+.button-download__resume:focus {
+    /* Resume download button pseudo-class style changes */
     cursor: pointer;
     opacity: 0.8;
     color: white;
     text-decoration: none;
 }
-.standard-label {
-    /*Standard label style changes (Contact page)*/
+
+.standard__label {
+    /* Standard label style changes (Contact page) */
     margin-left: 10px;
+    color: var(--secondary-color);
 }
-.submit-message_button {
-    /*"Send Message" button changes*/
+
+.contact__info-span {
+    /* "email-info" and "tel-info" span style changes (Contact page) */
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.submit-message__button {
+    /* "Send Message" button changes (Contact page) */
     font-size: 16px;
     color: #262626;
     background-color: var(--tertiary-color);
@@ -192,87 +253,128 @@ input, textarea {
     margin: 2px;
     margin-left: 10px;
     margin-top: 4px;
+    outline: none;
+    transition: opacity 0.2s;
 }
+
+.submit-message__button:hover {
+    /* Will outline the "Send Message" button while hovering */
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.submit-message__button:focus {
+    /* Will lower the opacity of the "Send Message" button when in "focus" */
+    outline: 2px solid var(--hover-focus-color);
+}
+
 .portfolio-logo {
-    /*Portfolio Logo scaling*/
+    /* Portfolio Logo scaling */
     height: 70px;
     width: 200px;
 }
+
 .profile {
-    /*Homepage profile (Heading, Project Hyperlink, Profile Portrait) style changes*/
+    /* Homepage profile (Heading, Project Hyperlink, Profile Portrait) style changes */
     max-width: 700px;
     margin: 0 auto;
 }
+
 .profile__heading {
-    /*Homepage heading style changes*/
+    /* Homepage heading style changes */
     margin-bottom: -8px;
 }
+
 .profile__portrait {
-    /*Homepage portrait style changes*/
+    /* Homepage portrait style changes */
     float: left;
     width: 250px;
     margin-right: 20px;
     border-radius: 50%;
 }
+
 .about__heading {
-    /*About page heading style changes*/
+    /* About page heading style changes */
     margin: 0 auto;
     text-align: center;
 }
+
 .about__paragraph {
-    /*About page paragraph style changes*/
+    /* About page paragraph style changes */
     font-size: 16px;
     margin: 0 auto;
     margin-top: 10px;
     max-width: 900px;
     text-align: center;
 }
+
 .about__table {
-    /*About page table (Skills, Years of Experience, Levels of Expertise) style changes*/
+    /* About page table (Skills, Years of Experience, Levels of Expertise) style changes */
     width: 300px;
     margin: 0 auto;
     margin-top: 10px;
     text-align: center;
 }
+
 .resume-button__container {
-    /*Resume button container style changes (About page)*/
+    /* Resume button container style changes (About page) */
     margin-top: 28px;
     text-align: center;
 }
+
 .contact__heading {
-    /*Contact heading style changes (Contact page)*/
+    /* Contact heading style changes (Contact page) */
     margin-top: -16px;
     margin-left: 10px;
     margin-bottom: 2px;
 }
+
 .email-info {
-    /*Contact info style changes (Developer Receiving Emails)*/
+    /* Contact info style changes (Developer Receiving Emails) */
     color: var(--secondary-color);
     margin-left: 4px;
     margin-bottom: 4px;
+    position: relative;
+    z-index: 2;
 }
+
 .tel-info {
-    /*Contact info style changes (Developer Receiving Phone Numbers)*/
+    /* Contact info style changes (Developer Receiving Phone Numbers) */
     color: var(--secondary-color);
     margin-left: 4px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
 }
+
 #contact-email {
-    /*Full contact form style changes (User Providing Emails)*/
+    /* Contact email form input style changes (User Providing Emails) */
     display: flex;
     flex-direction: column;
     width: 400px;
     margin-left: 10px;
 }
+
+#contact-email:focus {
+    /* Will create an outline around contact email form input when in "focus" */
+    outline: 1px solid var(--hover-focus-color);
+}
+
 #contact-tel {
-    /*Full contact form style changes (User Providing Phone Numbers)*/
+    /* Contact telephone form input style changes (User Providing Phone Numbers) */
     display: flex;
     flex-direction: column;
     width: 400px;
     margin-left: 10px;
 }
+
+#contact-tel:focus {
+    /* Will create an outline around contact telephone form input when in "focus" */
+    outline: 1px solid var(--hover-focus-color);
+}
+
 #contact-message {
-    /*Full contact form style changes (User Providing Messages)*/
+    /* Contact message form input style changes (User Providing Messages) */
     display: flex;
     flex-direction: column;
     height: 200px;
@@ -280,63 +382,82 @@ input, textarea {
     margin-left: 10px;
     resize: none;
 }
+
+#contact-message:focus {
+    /* Will create an outline around contact message form input when in "focus" */
+    outline: 1px solid var(--hover-focus-color);
+}
+
 .contact__footer {
-    /*"Contact Me!" footer style changes (Contact page)*/
+    /* "Contact Me!" footer style changes (Contact page) */
     margin-top: 80px;
 }
+
 .contact__container {
-    /*Contact form and Availability Schedule container for general positioning (Contact page)*/
+    /* Contact form and Availability Schedule container for general positioning (Contact page) */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .availability__table-container {
-    /*Availability Schedule container for positioning (Contact page)*/
+    /* Availability Schedule container for positioning (Contact page) */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
-.availability__table {
-    /*Availability Schedule time and day style and positioning changes (Contact page)*/
-    margin-right: 100px;
-    margin-top: 140px;
-}
-.table__header {
-    /*Availability Schedule header cell style changes (Contact page)*/
+
+.availability__table-header {
+    /* Availability Schedule header cell style changes (Contact page) */
     vertical-align: middle;
     padding-bottom: 2px;
 }
+
+.availability__table {
+    /* Availability Schedule time and day style and positioning changes (Contact page) */
+    margin-right: 100px;
+    margin-top: 140px;
+}
+
 .day-cell {
-    /*Availability Schedule day cell style changes (Contact page)*/
+    /* Availability Schedule day cell style changes (Contact page) */
     color: var(--primary-color);
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .time-cell {
-    /*Availability Schedule time cell style changes (Contact page)*/
+    /* Availability Schedule time cell style changes (Contact page) */
     color: var(--secondary-color);
     white-space: nowrap;
 }
+
 .footer--adjustment--contact {
-    /*Footer adjustment changes (Contact page)*/
+    /* Footer adjustment changes (Contact page) */
     margin-top: -40px;
 }
+
 .work-heading {
     margin-left: 20px;
 }
+
 .grid__item {
-    /*Grid fallback method (Alternative Layout)*/
+    /* Grid fallback method (Alternative Layout) */
     display: inline-block;
     width: 33%;
 }
+
 .grid {
-    /*Base grid layout (Work Page)*/
+    /* Base grid layout (Work Page) */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 0;
 }
+
 .grid__item {
-    /*Base grid item layout (Work Page)*/
+    /* Base grid item layout (Work Page) */
     font-size: 14px;
     outline: 2px solid var(--secondary-background-color);
     padding: 10px;
@@ -344,123 +465,237 @@ input, textarea {
     min-height: auto;
     margin: 0;
 }
+
 .grid__item:last-child {
     grid-column: 3/3;
     grid-row: 1/3;
 }
+
 .bridge-section {
-    /*Changes to San Francisco Bridge SVG Section (About Page)*/
+    /* Changes to San Francisco Bridge SVG Section (About Page) */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
+
 .animated-svg {
-    /*Changes to San Francisco Bridge SVG (About Page)*/
+    /* Changes to San Francisco Bridge SVG (About Page) */
     border: solid 1px var(--secondary-background-color);
 }
+
 @media all and (max-width: 500px) {
-    /*Smaller device media query*/
+    /* Small device media query */
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
     .profile__portrait {
         width: 180px;
         margin-right: 5px;
     }
+
     .grid {
         grid-template-columns: 1fr;
     }
+
     .about__heading {
         font-size: 22px;
         max-width: 200px;
     }
+
     .about__paragraph {
         max-width: 300px;
     }
+
     .animated-svg {
         height: 300px;
         width: 300px;
     }
+
     .contact__heading {
         margin-left: 50px;
-        margin-bottom: 4px;
     }
-    .standard-label {
+
+    .standard__label {
         margin-left: 20px;
     }
-    .email-info, .tel-info {
+
+    .email-info,
+    .tel-info {
         font-size: 14px;
     }
+
     #contact-form {
         margin-top: 200px;
     }
-    #contact-email, #contact-tel {
+
+    #contact-email,
+    #contact-tel {
         width: 300px;
         margin-left: 20px;
     }
+
     #contact-message {
         width: 300px;
         margin-left: 20px;
     }
-    .submit-message_button {
+
+    .submit-message__button {
         margin-left: 20px;
     }
+
     .availability__table-container {
         display: flex;
         flex-direction: column;
         margin-left: -300px;
         margin-bottom: 430px;
     }
-    .table__header {
+
+    .availability__table-header {
         padding-left: -40px;
         padding-bottom: 4px;
     }
-}
-@media all and (min-width: 500px) and (max-width: 750px) {
-    /*Bigger device media query*/
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    .about__heading {
-        font-size: 32px;
-    }
-    .about__paragraph {
-        max-width: 550px;
-    }
-    .animated-svg {
-        height: 450px;
-        width: 450px;
-    }
-    .contact__heading {
-        margin-bottom: 4px;
-    }
-    .email-info, .tel-info {
-        font-size: 15px;
-    }
-    #contact-form {
-        margin-top: 220px;
-    }
-    #contact-email, #contact-tel {
-        width: 320px;
-    }
-    #contact-message {
-        width: 320px;
-    }
-    .availability__table {
-        margin-bottom: -160px;
-    }
-}
-@media all and (max-width: 750px) {
-    /*Shared media query between smaller and bigger devices*/
+
     .grid {
         grid-gap: 10px;
     }
+
     .grid__item:last-child {
         grid-column: auto / auto;
         grid-row: auto / auto;
     }
-    h1 {
-        font-size: 22px;
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    /* Medium device media query */
+    .grid {
+        grid-template-columns: 1fr 1fr;
     }
-    h2 {
-        font-size: 14px;
+
+    .about__heading {
+        font-size: 32px;
+    }
+
+    .about__paragraph {
+        max-width: 550px;
+    }
+
+    .animated-svg {
+        height: 450px;
+        width: 450px;
+    }
+
+    .contact__heading {
+        margin-bottom: 4px;
+    }
+
+    .email-info,
+    .tel-info {
+        font-size: 15px;
+    }
+
+    #contact-form {
+        margin-top: 220px;
+    }
+
+    #contact-email,
+    #contact-tel {
+        width: 300px;
+    }
+
+    #contact-message {
+        width: 600px;
+    }
+
+    .availability__table-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: -300px;
+        margin-bottom: 250px;
+    }
+
+    .availability__table-header {
+        padding-left: -40px;
+        padding-bottom: 4px;
     }
 }
+
+@media all and (min-width: 750px) and (max-width: 1080px) {
+    /* Large device media query */
+    #contact-message {
+        width: 400px;
+    }
+
+    .availability__table-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        margin-bottom: 2px;
+    }
+
+    .availability__table-header {
+        padding-left: 10px;
+    }
+
+    .day-cell {
+        padding-bottom: 8px;
+    }
+
+    .time-cell {
+        padding-bottom: 8px;
+    }
+}
+
+@media all and (min-width: 1080px) and (max-width: 1440px) {
+    /* Larger device media query */
+    #contact-message {
+        width: 600px;
+    }
+
+    .availability__table-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        margin-bottom: 2px;
+    }
+
+    .availability__table-header {
+        padding-left: 10px;
+    }
+
+    .day-cell {
+        padding-bottom: 8px;
+    }
+
+    .time-cell {
+        padding-bottom: 8px;
+    }
+}
+
+@media all and (min-width: 1440px) and (max-width: 2160px) {
+    /* Largest device media query */
+    .availability__table-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        margin-bottom: 2px;
+    }
+
+    .availability__table-header {
+        padding-left: 10px;
+    }
+
+    .day-cell {
+        padding-bottom: 8px;
+    }
+
+    .time-cell {
+        padding-bottom: 8px;
+    }
+}
+
