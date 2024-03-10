@@ -4,16 +4,18 @@
     <g id="Background" transform="matrix(1.01942,0,0,1.0534,-3.98058,-3.95146)">
         <rect x="-1" y="-1" width="206" height="75" style="fill:rgb(38,38,38);"/>
     </g>
-    <g transform="matrix(0.707706,0,0,0.707706,27.3293,38.1503)">
-        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(255,148,26);">Ca<tspan x="30.984px 45.07px 60.023px " y="0px 0px 0px ">yde</tspan>n Lauritz<tspan x="179.66px 193.957px " y="0px 0px ">en</tspan></text>
+    <g transform="matrix(0.707706,0,0,0.707706,36.3293,35.1503)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:24px;fill:rgb(255,148,26);">Cayden Lauritzen</text>
     </g>
-    <g transform="matrix(2.21916,0,0,4.16603,-2.22394,68.65)">
-        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+    <g transform="matrix(2.21916,0,0,4.16603,-57.9221,-126.207)">
+        <g transform="matrix(1.24753,0,0,1.24753,26.9705,49.3487)">
+            <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+        </g>
+        <g transform="matrix(-1.24753,0,0,1.24753,115.639,49.1086)">
+            <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+        </g>
     </g>
-    <g transform="matrix(-2.21916,0,0,4.16603,202.685,68.65)">
-        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(122,245,124);">&lt;</text>
-    </g>
-    <g transform="matrix(0.451845,0,0,0.451845,30.9051,48.7605)">
-        <text x="0px" y="0px" style="font-family:'Verdana', sans-serif;font-size:24px;fill:rgb(137,194,230);">Full Stack W<tspan x="148.57px 162.867px " y="0px 0px ">eb</tspan> Dev<tspan x="233.039px 247.336px " y="0px 0px ">el</tspan>oper</text>
+    <g transform="matrix(0.448213,0,0,0.451845,39.9123,46.7605)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:24px;fill:rgb(137,194,230);">Full Stack W<tspan x="134.25px 147.598px " y="0px 0px ">eb</tspan> Developer</text>
     </g>
 </svg>
