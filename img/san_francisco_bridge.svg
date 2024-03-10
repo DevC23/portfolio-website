@@ -13,6 +13,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
    <style type="text/css" media="screen">
+      <!--
+      Colors Used
+      Sky Color - #d0eed4 (Nyanza) / #f8dab5 (Light Orange)
+      Bridge Color - #79cf90 (Emerald) / #f8b080 (Sandy Brown)
+      -->
       <![CDATA[
          .sky {
          animation: 6s sky-color-change infinite alternate linear;
@@ -22,18 +27,18 @@
       }
       @keyframes sky-color-change {
          from {
-            fill: #D0EED4;
+            fill: #d0eed4;
          }
          to {
-            fill: #F8DAB5;
+            fill: #f8dab5;
          }
       }
       @keyframes bridge-color-change {
          from {
-            fill: #79CF90;
+            fill: #79cf90;
          }
          to {
-            fill: #F8B080;
+            fill: #f8b080;
          }
       }
       ]]>
