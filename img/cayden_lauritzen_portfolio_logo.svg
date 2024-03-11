@@ -1,19 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 200 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="Background" transform="matrix(1.01942,0,0,1.0534,-3.98058,-3.95146)">
-        <rect x="-1" y="-1" width="206" height="75" style="fill:rgb(38,38,38);"/>
+<svg
+   width="100%"
+   height="100%"
+   viewBox="0 0 200 70"
+   version="1.1"
+   xml:space="preserve"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+   id="svg4"
+   sodipodi:docname="cayden_lauritzen_portfolio_logo_fallback.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs4" /><sodipodi:namedview
+   id="namedview4"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="7.015"
+   inkscape:cx="100"
+   inkscape:cy="23.663578"
+   inkscape:window-width="1920"
+   inkscape:window-height="1002"
+   inkscape:window-x="1699"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg4" />
+    <g
+   id="Background"
+   transform="matrix(1.01942,0,0,1.0534,-3.98058,-3.95146)">
+        <rect
+   x="-1"
+   y="-1"
+   width="206"
+   height="75"
+   style="fill:rgb(38,38,38);"
+   id="rect1" />
     </g>
-    <g transform="matrix(0.795202,0,0,0.795202,-3.4639,0.588549)">
-        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(255,148,26);">Cayden Lauritzen</text>
+    <g
+   transform="matrix(0.795202,0,0,0.795202,-3.4639,0.588549)"
+   id="g1">
+        <text
+   x="26px"
+   y="47.973px"
+   style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(255,148,26);"
+   id="text1">Cayden Lauritzen</text>
     </g>
-    <g transform="matrix(2.21916,0,0,4.16603,-59.9221,-128.207)">
-        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+    <g
+   transform="matrix(2.21916,0,0,4.16603,-59.9221,-128.207)"
+   id="g2">
+        <text
+   x="26px"
+   y="47.973px"
+   style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(122,245,124);"
+   id="text2">&lt;</text>
     </g>
-    <g transform="matrix(-2.21916,0,0,4.16603,259.383,-128.207)">
-        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(122,245,124);">&lt;</text>
+    <g
+   transform="matrix(-2.21916,0,0,4.16603,259.383,-128.207)"
+   id="g3">
+        <text
+   x="26px"
+   y="47.973px"
+   style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(122,245,124);"
+   id="text3">&lt;</text>
     </g>
-    <g transform="matrix(0.480897,0,0,0.480897,16.3446,28.875)">
-        <text x="26px" y="47.973px" style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(137,194,230);">Full Stack Web Developer</text>
+    <g
+   transform="matrix(0.480897,0,0,0.480897,16.3446,28.875)"
+   id="g4">
+        <text
+   x="26px"
+   y="47.973px"
+   style="font-family:'Poppins-Regular', 'Poppins';font-size:24px;fill:rgb(137,194,230);"
+   id="text4">Full Stack Web Developer</text>
     </g>
 </svg>
