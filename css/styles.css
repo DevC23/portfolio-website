@@ -1,12 +1,12 @@
 /*
 Colors Used
 Background Color - #262626 (Dark Gray)
-Secondary Background Color #c2bcbc (Light Gray)
+Secondary Background Color - #c2bcbc (Light Gray)
 Primary Color - #ff941a (Orange)
 Secondary Color - #89c2e6 (Light Blue)
 Tertiary Color - #7af57c (Light Green)
 Hover/Focus Color - #c2b8f4 (Lavender Blue)
-Visited Color #f0a3ff (Light Purple)
+Visited Color - #f0a3ff (Light Purple)
 Active Color - #ff8f8f (Light Red)
 */
 
@@ -153,7 +153,7 @@ a {
 }
 
 a:hover {
-    /* Will not show a underline when hovering over link by default */
+    /* Will show a underline when hovering over link */
     color: var(--hover-focus-color);
     text-decoration: underline;
 }
@@ -269,7 +269,7 @@ textarea {
 }
 
 .portfolio-logo {
-    /* Portfolio Logo scaling */
+    /* Base portfolio logo scaling */
     height: 70px;
     width: 200px;
 }
@@ -492,6 +492,14 @@ textarea {
 
     h2 {
         font-size: 14px;
+    }
+
+    .navigation-list__item:hover {
+        border-bottom: none;
+    }
+
+    .navigation-list__item--visited:hover {
+        border-bottom: none;
     }
 
     .profile__portrait {
