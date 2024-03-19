@@ -54,7 +54,6 @@ body {
 
 .navigation-list {
     /* Base navigation list style changes" */
-    color: #7af57c;
     list-style-type: none;
 }
 
@@ -72,19 +71,18 @@ body {
 
 .navigation-list__item:hover {
     /* Navigation hyperlink style when on current webpage while hovering" */
-    color: #89c2e6;
     border-bottom: 1px solid #7af57c;
     text-decoration: none;
     outline: none;
 }
 
-.navigation-list__item--visited:visited {
+.navigation-list__item--previous:visited {
     /* Navigation hyperlink style after visiting previous webpage */
     color: #ff941a;
     text-decoration: none;
 }
 
-.navigation-list__item--visited:hover {
+.navigation-list__item--previous:hover {
     /* Navigation hyperlink style after visiting previous webpage while hovering */
     color: #ff941a;
     border-bottom: 1px solid #7af57c;
@@ -288,6 +286,11 @@ textarea {
     /* Base portfolio logo scaling */
     height: 70px;
     width: 200px;
+}
+
+.portfolio-logo:hover {
+    /* Portfolio logo style changes when hovering over portfolio logo */
+    outline: none;
 }
 
 .profile {
@@ -551,7 +554,7 @@ textarea {
         border-bottom: none;
     }
 
-    .navigation-list__item--visited:hover {
+    .navigation-list__item--previous:hover {
         border-bottom: none;
     }
 
